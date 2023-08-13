@@ -5,7 +5,10 @@ import styles from './page.module.scss';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Avatar />
+      <Avatar
+        url="https://www.github.com/rafaasimi.png"
+        alt="Rafael Simionato"
+      />
 
       <div className={styles.description}>
         <h2>Rafael Simionato</h2>

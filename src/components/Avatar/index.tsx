@@ -1,11 +1,20 @@
-import Image from "next/image";
-import styles from "./styles.module.scss"
+import Image from 'next/image';
+import styles from './styles.module.scss';
 
+interface AvatarProps {
+  url: string;
+  alt?: string;
+}
 
-export function Avatar() {
+export function Avatar({ url, alt = '' }: AvatarProps) {
   return (
     <div className={styles.avatarContainer}>
-      <Image src='https://www.github.com/rafaasimi.png' alt="Rafael Simionato" width={200} height={200}/>
+      <Image
+        src={url}
+        alt={alt}
+        width={200}
+        height={200}
+      />
     </div>
-  )
+  );
 }
