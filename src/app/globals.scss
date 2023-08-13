@@ -1,0 +1,49 @@
+:root {
+  --white: #FFFFFF;
+
+  --blue-300: #22272E;
+  --blue-500: #1C2128;
+
+  --purple-500: #654EA3;
+
+  --radius-8: 8px;
+
+  --bg-color: #22272E;
+
+  --title: var(--font-exo2);
+  --default: var(--font-nunito);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--white);
+  font-family: var(--font-nunito);
+  background-color: var(--bg-color);
+  padding: 90px 24px 24px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mainContainer {
+  max-width: 41.5rem;
+  margin: 0 auto;
+  flex: 1;
+}
