@@ -18,6 +18,12 @@
 
 .description {
   margin-bottom: 2.5rem;
+  text-align: justify;
+
+  a {
+    color: var(--purple-500);
+    font-weight: bold;
+  }
 }
 
 .projectList {
